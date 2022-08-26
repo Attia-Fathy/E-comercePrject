@@ -1,0 +1,114 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --header-back-color: #004581;
+    --font-header-color: #dde8f0;
+    --header-color: #97cbdc;
+    --back-color: #018abd;
+}
+.logo img {
+    width: 200px;
+    height: 180px;
+}
+.head , .navebar , .icons , .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons , .navebar{
+    list-style-type: none;
+}
+.icons div {
+    padding: 10px;
+    text-align: center;
+    color: var(--font-header-color);
+}
+.icons .fa {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--header-color);
+    color: black;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.icons div a , .navebar li a{
+    text-decoration: none;
+    color: var(--font-header-color);
+}
+
+.head{
+    background-color: var(--header-back-color);
+    padding: 6px;
+    font-size: 25px;
+}
+.logo{
+    width: 10%;
+    margin-left: 2%;
+}
+nav{
+    width: 30%;
+}
+
+.icons{
+    width: 30%;
+    margin-right: 3%;
+}
+.search{
+    background-color: var(--back-color);
+    justify-content: center;
+    padding: 1%;
+}
+.search form{
+    background-color: white;
+    width: 40%;
+    height: 45px;
+    display: flex;
+}
+.search form input{
+    font-size: 18px;
+    flex: 1;
+    border: none;
+    outline: none;
+}
+/* ------------------------------------------------------------- */
+/* search bar */
+.search form button{
+    font-size: 18px;
+    background: var(--header-back-color);
+    color: var(--font-header-color);
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1px;
+}
+.search form .fa{
+    padding: 1% 3%;
+    align-self: center;
+    color: #777;
+}
+#search-main-menu{
+    display: none;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* hover */
+.navebar li a:hover , .login a:hover {
+    /* font-size: 30px; */
+    /* background-color: var(--font-header-color); */
+    color: #000000;
+}
+.icons .fa:hover {
+    background-color: #000000;
+    color: var(--font-header-color);
+    /* width: 70px;
+    height: 70px;
+    font-size: 40px;
+    line-height: 60px; */
+}

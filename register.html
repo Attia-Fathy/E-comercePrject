@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <!-- font awesome-free-6.1.2-web Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/e-commerce.png" alt=""></a>
+    </header>
+    <main>
+        <!-- Register -->
+        <section class="register-box">
+            <h1>Register</h1>
+            <form>
+                <div class="regis-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input required type="text" placeholder="Enter your name">
+                </div>
+                <div class="regis-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input required type="email" placeholder="Enter your email">
+                </div>
+                <div class="regis-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input required class="password" type="password" placeholder="Create a password">
+                    <i id="showpw" class="fa-solid fa-eye-slash showHidePw"></i>
+                </div>
+                <div class="regis-box" >
+                    <i class="fa-solid fa-lock"></i>
+                    <input required class="password" type="password" placeholder="Confirm a password">
+                    <i id="showpw" class="fa-solid fa-eye-slash showHidePw"></i>
+                </div>
+                <div class="regis-but">
+                    <p>
+                        By Clicking Register button, you agree to our
+                        <br> <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>
+                    </p>
+                    <input class="butt" type="submit" value="Register">
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html">login</a></p>
+        </section>
+    </main>
+    <script src="js/onclick.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- font awesome-free-6.1.2-web Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/e-commerce.png" alt=""></a>
+    </header>
+    <main>
+        <!-- login -->
+        <section class="login-box">
+            <h1>Login</h1>
+            <form>
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input required type="email" placeholder="Enter your email">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input required class="password" type="password" placeholder="Enter your password">
+                    <i id="showpw" class="fa-solid fa-eye-slash showHidePw"></i>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" id="login-Check">
+                    <label for="login-Check">Remember me</label>
+                </div>
+                <div class="login-but">
+                    <input class="butt" type="submit" value="Login">
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+            <p class="text">New account? <a href="register.html">Required</a></p>
+        </section>
+    </main>
+    <script src="js/onclick.js"></script>
+</body>
+
+</html>
