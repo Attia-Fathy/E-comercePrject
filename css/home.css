@@ -5,24 +5,8 @@
     margin: 0;
 }
 
-/*
-#a1e1fa
-#74bde0
-#4a8db7
-#3b7197
-#2e424d
-*/
-:root {
-    --body-back-color: #a1e1fa;
-    --back-color: #4a8db7;
-    --back-color2: #74bde0;
-    --back-color3: #3b7197;
-    --font-color: #e9eef2;
-    --font-color2: #dde8f0;
-}
-
 body {
-    background-color: var(--body-back-color);
+    background-color: #a1e1fa;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -35,7 +19,10 @@ body {
     margin: 1%;
     padding: 2px;
     box-shadow: -7px 7px 20px 0 #000000ab;
-    background-color: var(--back-color);
+    background-color: #018abd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .titel-cate {
@@ -50,15 +37,26 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 1%;
+    padding: 0 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
+.cate-link::-webkit-scrollbar {
+    display: none;
+}
+.col-img {
+    flex: 0 0 auto;
+    margin-right: 20px;
+
+}
 .col-img a {
     text-decoration: none;
 }
 
 .col-img a p {
     text-align: center;
-    color: var(--font-color);
+    color: #e9eef2;
     font-size: 18px;
 }
 
@@ -66,162 +64,41 @@ body {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-}
-
-/* ----------------------------------------------------------------------------------------------------------------------------- */
-/* PRODUCTS */
-.product {
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-    background-color: var(--back-color2);
-    margin: 2%;
-}
-
-.product-category {
-    padding: 0 10vw;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 40px;
-    text-transform: capitalize;
-}
-
-.product-container {
-    padding: 0 10vw;
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.product-container::-webkit-scrollbar {
-    display: none;
-}
-
-.product-card {
     flex: 0 0 auto;
-    width: 250px;
-    height: 360px;
-    margin-right: 40px;
 }
-
-.product-image {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-}
-
-.product-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.discount-tag {
-    position: absolute;
-    background: var(--font-color);
-    padding: 5px;
-    border-radius: 5px;
-    color: #ff7d7d;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-}
-
-.card-btn , .card-btn2 {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
+.pre-btn2 , .nxt-btn2 {
+    border-radius: 50%;
     border: none;
-    outline: none;
-    background: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-    opacity: 0;
-}
-.card-btn2 {
-margin-bottom: 20%;
-}
 
-.product-card:hover .card-btn {
-    opacity: 1;
-}
-.product-card:hover .card-btn2 {
-    opacity: 1;
-}
-
-.card-btn:hover , .card-btn2:hover {
-    background: #ff7d7d;
-    color: #fff;
-}
-
-.product-info {
-    width: 100%;
-    height: 100px;
-    padding-top: 10px;
-}
-
-.product-brand {
-    text-transform: uppercase;
-}
-
-.product-short-description {
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    overflow: hidden;
-    opacity: 0.5;
-    text-transform: capitalize;
-    margin: 5px 0;
-}
-
-.price {
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.actual-price {
-    margin-left: 20px;
-    opacity: 0.5;
-    text-decoration: line-through;
-}
-
-.pre-btn,
-.nxt-btn {
-    border: none;
-    width: 10vw;
-    height: 100%;
+    /* width: 20px; */
+    /* height: 100%; */
     position: absolute;
     top: 0;
+    margin-top: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #018abd 100%);
     cursor: pointer;
     z-index: 8;
+    /* opacity: 0; */
 }
-
-.pre-btn {
+.pre-btn2 {
     left: 0;
     transform: rotate(180deg);
 }
 
-.nxt-btn {
+.nxt-btn2 {
     right: 0;
 }
 
-.pre-btn img,
-.nxt-btn img {
-    opacity: 0.2;
+.pre-btn2 i,
+.nxt-btn2 i {
+    opacity: 0;
+    font-size: 50px;
 }
 
-.pre-btn:hover img,
-.nxt-btn:hover img {
+.pre-btn2:hover i,
+.nxt-btn2:hover i {
     opacity: 1;
 }
-
